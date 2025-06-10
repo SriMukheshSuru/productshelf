@@ -1,0 +1,32 @@
+{
+  "name": "productshelf",
+  "version": "1.0.0",
+  "description": "This is a practice MERN app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "cross-env NODE_ENV=production node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SriMukheshSuru/productshelf.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SriMukheshSuru/productshelf/issues"
+  },
+  "homepage": "https://github.com/SriMukheshSuru/productshelf#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.10"
+  }
+}
